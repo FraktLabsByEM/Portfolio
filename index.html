@@ -7,12 +7,209 @@
   <title>FraktLabs || Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Eric Movilla">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- googlefonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- google symbols -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-  <h1>Fraktal Laboratories</h1>
-  <strong>Building software solutions within everyone's reach</strong>
+  <section id="header" scroll-background scroll-depth="70">
+    <header>
+      <div>
+        <img src="/assets/image-logo.png" class="header-logo" />
+        <h1>Frakt<strong>Labs</strong></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="?chatbot">Chatbot</a></li>
+          <li><a href="#projects">Librerías</a></li>
+          <li><a href="?findust">Fraktal Industries</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+  <section id="home">
+    <h2>¿Que es Frakt Labs?</h2>
+    <p>What is Lorem Ipsum?
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard
+      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+      specimen
+      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+      essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more
+      recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+      Why do we use it?
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+      its
+      layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+      using
+      'Content here, content here', making it look like readable English. Many desktop publishing packages and web page
+      editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+      sites
+      still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+      (injected humour and the like).
+
+
+      Where does it come from?
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+      literature
+      from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+      Virginia,
+      looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+      cites of
+      the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+      1.10.33
+      of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+      treatise
+      on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
+      sit
+      amet..", comes from a line in section 1.10.32.
+
+      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32
+      and
+      1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+      accompanied by
+      English versions from the 1914 translation by H. Rackham.
+
+      Where can I get some?
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+      form,
+      by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+      passage of
+      Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
+      Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on
+      the
+      Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
+      generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
+      injected humour, or non-characteristic words etc.</p>
+  </section>
+  <div
+    style="height: 20dvh; width: 100%; background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7d97b4b8-dd3f-44bf-afc8-33025e350228/dflx2wy-df5009b0-0605-45f7-b9fb-ece9b68f9dfe.png/v1/fill/w_1280,h_854,q_80,strp/carbon_fiber_background_by_silentragex_dflx2wy-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvN2Q5N2I0YjgtZGQzZi00NGJmLWFmYzgtMzMwMjVlMzUwMjI4XC9kZmx4Mnd5LWRmNTAwOWIwLTA2MDUtNDVmNy1iOWZiLWVjZTliNjhmOWRmZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.EzgR_qzd4OQ0XLByVxibK6_aUzZ1gHSa-cAYhF1NEM4);"
+    scroll-background scroll-depth="50"></div>
+  <section id="home">
+    <h2>¿Que es Frakt Labs?</h2>
+    <p>What is Lorem Ipsum?
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard
+      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+      specimen
+      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+      essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more
+      recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+      Why do we use it?
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+      its
+      layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+      to
+      using
+      'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+      page
+      editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+      sites
+      still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+      purpose
+      (injected humour and the like).
+
+
+      Where does it come from?
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+      literature
+      from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+      Virginia,
+      looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+      cites of
+      the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+      1.10.33
+      of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+      treatise
+      on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
+      sit
+      amet..", comes from a line in section 1.10.32.
+      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+      1.10.32
+      and
+      1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+      accompanied by
+      English versions from the 1914 translation by H. Rackham.
+
+      Where can I get some?
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+      some
+      form,
+      by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+      passage of
+      Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
+      Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
+      on
+      the
+      Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
+      generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
+      injected humour, or non-characteristic words etc.The standard chunk of Lorem Ipsum used since the 1500s is
+      reproduced below for those interested. Sections
+      1.10.32
+      and
+      1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+      accompanied by
+      English versions from the 1914 translation by H. Rackham.
+
+      Where can I get some?
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+      some
+      form,
+      by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+      passage of
+      Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
+      Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
+      on
+      the
+      Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
+      generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
+      injected humour, or non-characteristic words etc.The standard chunk of Lorem Ipsum used since the 1500s is
+      reproduced below for those interested. Sections
+      1.10.32
+      and
+      1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+      accompanied by
+      English versions from the 1914 translation by H. Rackham.
+
+      Where can I get some?
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+      some
+      form,
+      by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+      passage of
+      Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
+      Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
+      on
+      the
+      Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
+      generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
+      injected humour, or non-characteristic words etc.</p>
+  </section>
+  <footer>
+    <h4>Contáctanos</h4>
+  </footer>
+  <script src="./libs/ScrollBackground.js" type="module"></script>
 </body>
 
 </html>

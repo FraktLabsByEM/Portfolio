@@ -1,0 +1,312 @@
+* {
+    outline: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MATERIAL DESING INSPIRED THEME */
+:root {
+    --bg: #0E2942;
+    --bg-alt: #084B70;
+    --main: #126180;
+    --maintr: #12618070;
+    --accent: #FF5F1F;
+
+
+    --on-bg: #fff;
+    --on-main: #fff;
+    --on-accent: #fff;
+    --neutral: #999;
+
+    --glass: #0003;
+    --shadow: #0007;
+    --highlight: #fff5;
+    --transition-short: 0.15s;
+    --transition-medium: 0.3s;
+    --transition-long: 0.6s;
+
+    --radius-normal: 0.3em;
+    --radius-high: 0.6em;
+}
+
+/* paleta clara Columbia Blue #CDE4F4 Indigo dye #084B70 Powder Blue #A3C8E7 paleta oscura prussian blue #0E2942 lapis lazuli #126180 Indigo dye #084B70 */
+
+/* CONTAINERS */
+body {
+    background-color: var(--bg);
+    width: 100dvw;
+    height: 100dvh;
+    max-width: 100dvw;
+    overflow-x: hidden;
+    font-size: 1.3rem;
+}
+
+#header {
+    background: url("https://c.pxhere.com/photos/fe/77/fibre_fiber_optics_blender_4k_resolution_wallpaper-573469.jpg!d");
+    height: 100dvh;
+    /* background-size: auto 200%; */
+
+    header {
+        position: fixed;
+        background-color: transparent;
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        background-color: #0007;
+        box-shadow: inset 0 -0.1em 0.2em #fff5;
+        backdrop-filter: blur(5px);
+        z-index: 1000;
+
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header-logo {
+            max-height: 5ch;
+        }
+
+        & h1 {
+            color: #126180;
+            font-size: 2.5rem;
+            margin-left: 0.5ch;
+            text-shadow: none;
+
+            & strong {
+                color: #A3C8E7;
+            }
+        }
+
+        & nav {
+            height: 100%;
+        }
+
+        & ul {
+            display: flex;
+            gap: 0.2rem;
+            list-style: none;
+            height: 100%;
+
+            & li {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+
+                & a {
+                    white-space: no-wrap;
+                    text-decoration: none;
+                    color: var(--on-bg);
+                    padding: 1ch 2ch;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: var(--on-main);
+                        background-color: var(--maintr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* TEXT ELEMENTS */
+:is(h1, h2) {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--main);
+    text-shadow: 0 0 0.1em var(--main);
+}
+
+h2 {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+}
+
+:is(h3, h4, h5, h6, label, a) {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--main);
+}
+
+.handwriting {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+:is(p, span, input) {
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--bg-dark);
+}
+
+/* INPUTS */
+.input {
+    display: flex;
+    flex-direction: row-reverse;
+    /* grid-template-columns: 0.35fr 0.75fr; */
+    align-items: center;
+    justify-content: start;
+    margin: 0.5ch 0;
+
+    &>label {
+        font-size: large;
+        padding-right: 1ch;
+        width: 12ch;
+        text-align: end;
+        transition: var(--transition-medium) color ease-in-out;
+    }
+
+    &>input:is(:hover, :focus, :focus-visible)+label {
+        color: var(--accent);
+    }
+
+
+    /* input icons */
+    &>label::after {
+        font-family: 'Material Symbols Outlined';
+        font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 1;
+        -webkit-font-feature-settings: 'liga' 1;
+        -moz-font-feature-settings: 'liga' 1;
+        font-feature-settings: 'liga' 1;
+        font-size: large;
+        position: absolute;
+        right: -24px;
+        color: var(--on-bg);
+        transition: var(--transition-medium) color ease-in-out;
+    }
+
+    &>input:is(:hover, :focus, :focus-visible)+label::after {
+        color: var(--accent);
+    }
+
+    &>input:is([type="name"],
+        [type="password"],
+        [type="email"],
+        [type="address"],
+        [type="search"]) {
+        padding-left: 2.5ch;
+    }
+
+    &>input[type="date"] {
+        padding-left: 2.5ch;
+        width: 22ch;
+    }
+
+    &>input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+    }
+
+    &>input[type="name"]+label::after {
+        content: 'person';
+    }
+
+    &>input[type="password"]+label::after {
+        content: 'key';
+    }
+
+    &>input[type="email"]+label::after {
+        content: 'mail';
+    }
+
+    &>input[type="address"]+label::after {
+        content: 'home';
+    }
+
+    &>input[type="date"]+label::after {
+        content: 'calendar_month';
+    }
+
+    &>input[type="search"]+label::after {
+        content: 'search';
+        transform: rotateY(180deg);
+    }
+}
+
+input {
+    font-size: large;
+    height: 3ch;
+    width: 22ch;
+    background-color: #0002;
+    outline: none;
+    border: none;
+    border-bottom: 0.2ch solid var(--neutral);
+    border-radius: var(--radius-high);
+    padding: 0 1ch;
+    padding-top: 0.4ch;
+    transition: var(--transition-medium) all ease-in-out;
+}
+
+input:is(:hover, :focus, :focus-visible) {
+    border-bottom: 0.2ch solid var(--accent);
+    background-color: #0001;
+}
+
+/* MATERIAL BUTTON */
+button {
+    font-size: large;
+    background-color: var(--main);
+    color: var(--on-accent);
+    padding: 0 3ch;
+    height: 3ch;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0.5ch 0.1ch var(--shadow);
+    overflow: hidden;
+    transition: var(--transition-medium) background-color ease-in-out;
+    margin: 1ch;
+}
+
+button:is(:hover, :focus-visible) {
+    background-color: var(--accent);
+    box-shadow: 0 0 0.5ch 0.1ch var(--accent);
+}
+
+/* AFTER ELEMENT */
+button::after {
+    --posy: -250px;
+    --posx: -250px;
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    transform-origin: 0 0;
+    background-color: var(--highlight);
+    top: var(--posy);
+    left: var(--posx);
+    scale: 1;
+    transition: var(--transition-long) all ease-out;
+}
+
+button:hover::after {
+    top: 50%;
+    left: 50%;
+    scale: 0.0001;
+}
