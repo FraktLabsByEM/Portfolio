@@ -9,6 +9,8 @@
  * @returns mapped number
  * @example 
  */
-export default map = (number, smin, smax, tmin, tmax) => {
+const map = (number, smin, smax, tmin, tmax) => {
     return (number - smin) / (smax - smin) * (tmax - tmin) + tmin;
 }
+
+export { map }
