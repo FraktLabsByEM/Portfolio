@@ -13,4 +13,4 @@ const map = (number, smin, smax, tmin, tmax) => {
     return (number - smin) / (smax - smin) * (tmax - tmin) + tmin;
 }
 
-export { map }
+export default { map }
