@@ -6,12 +6,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    font-size: large;
+}
+
 /* MATERIAL DESING INSPIRED THEME */
 :root {
     --bg: #0E2942;
     --bg-alt: #084B70;
     --main: #126180;
     --maintr: #12618070;
+    --main-li: #A3C8E7;
     --accent: #FF5F1F;
 
 
@@ -39,107 +45,232 @@ body {
     width: 100dvw;
     height: 100dvh;
     max-width: 100dvw;
+    max-height: 100dvh;
     overflow-x: hidden;
     font-size: 1.3rem;
 }
 
-#header {
-    background: url("https://c.pxhere.com/photos/fe/77/fibre_fiber_optics_blender_4k_resolution_wallpaper-573469.jpg!d");
+main {
     height: 100dvh;
-    /* background-size: auto 200%; */
+    width: 100dvw;
+}
 
-    header {
-        position: fixed;
-        background-color: transparent;
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100vw;
+    padding: 1rem 5vw 4rem 12vw;
+    overflow-y: auto;
+
+    &>div {
         width: 100%;
-        height: 8vh;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-        background-color: #0007;
-        box-shadow: inset 0 -0.1em 0.2em #fff5;
-        backdrop-filter: blur(5px);
-        z-index: 1000;
+        gap: 3rem;
+    }
+}
 
-        div {
-            display: flex;
-            flex-direction: row;
-        }
+#home {
+    --s: 10dvw;
+    /* control the size*/
+    --c1: #0E2942;
+    --c2: #0b2238;
+    --c3: #081c2e;
 
-        .header-logo {
-            max-height: 5ch;
-        }
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background:
+        /* making it darker*/
+        linear-gradient(to left, #0007, #0007),
+        conic-gradient(from -60deg at 50% calc(100%/3), var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200%/3), var(--_g)),
+        conic-gradient(from 60deg at calc(200%/3), var(--c3) 60deg, var(--c2) 0 120deg, #0000 0),
+        conic-gradient(from 180deg at calc(100%/3), var(--c1) 60deg, var(--_g)),
+        linear-gradient(90deg, var(--c1) calc(100%/6), var(--c2) 0 50%,
+            var(--c1) 0 calc(500%/6), var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+    background-attachment: fixed;
+}
 
-        & h1 {
-            color: #126180;
-            font-size: 2.5rem;
-            margin-left: 0.5ch;
-            text-shadow: none;
+#projects {
+    --s: 20dvw;
+    /* control the size*/
+    --c1: #0a2136;
+    --c2: #0c253d;
+    --c3: #0E2942;
+    --c4: #081c2e;
+    --c5: #0a2135;
 
-            & strong {
-                color: #A3C8E7;
-            }
-        }
+    --_g: conic-gradient(from 30deg at 50% 25%, #0000 300deg, var(--c1) 0);
+    background:
+        /* making it darker*/
+        linear-gradient(to left, #0007, #0007),
+        var(--_g) calc(0.2885*var(--s)) calc(7*var(--s)/12),
+        var(--_g) 0 calc(var(--s)/12),
+        conic-gradient(from 120deg at 50% calc(250%/3), var(--c2) 120deg, #0000 0),
+        repeating-conic-gradient(from 30deg, #0000 0 60deg, var(--c3) 0 120deg),
+        repeating-conic-gradient(var(--c4) 0 60deg, var(--c2) 0 120deg, var(--c5) 0 180deg);
+    background-size: calc(0.577*var(--s)) var(--s);
+    background-attachment: fixed;
 
-        & nav {
-            height: 100%;
-        }
+    & .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
 
-        & ul {
-            display: flex;
-            gap: 0.2rem;
-            list-style: none;
-            height: 100%;
+        &>div {
+            aspect-ratio: 8/10;
+            background: var(--bgi);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 1rem;
 
-            & li {
-                display: flex;
-                height: 100%;
-                align-items: center;
-                justify-content: center;
-
-                & a {
-                    white-space: no-wrap;
-                    text-decoration: none;
-                    color: var(--on-bg);
-                    padding: 1ch 2ch;
-                    font-weight: bold;
-
-                    &:hover {
-                        color: var(--on-main);
-                        background-color: var(--maintr);
-                    }
-                }
+            &>div {
+                background-color: var(--bg);
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 0.5em;
+                border-radius: 0 0 1rem 1rem;
             }
         }
     }
 }
 
 
+footer {
+    width: auto;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6vw;
+    height: 100vh;
+    background-color: #000a;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+
+    & nav {
+        width: 100%;
+        align-self: center;
+        top: -3rem;
+        color: white;
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            list-style: none;
+            align-items: start;
+
+            & li {
+                width: 100%;
+                display: flex;
+                padding-left: 0.25rem;
+                align-items: center;
+                justify-content: center;
+
+                & a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: var(--on-bg);
+                    padding: 1ch 0.5ch;
+                    font-weight: bold;
+                }
+
+                & a::after {
+                    content: attr(content);
+                    pointer-events: none;
+                    opacity: 0;
+                    font-family: "Rajdhani", sans-serif;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transform: translateX(100%);
+                    padding: inherit;
+                    background-color: #000e;
+                    text-align: center;
+                    transition: 0.3s all linear 0.15s;
+                    backdrop-filter: blur(10px);
+                }
+
+                & a:hover::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+#header {
+    /* background: url("https://c.pxhere.com/photos/fe/77/fibre_fiber_optics_blender_4k_resolution_wallpaper-573469.jpg!d"); */
+    background: url("https://www.grapheverywhere.com/wp-content/uploads/2021/11/businessman-using-flying-network-connection-3d-rendering.jpg");
+    height: 100dvh;
+    width: 100dvw;
+    display: grid;
+    grid-template-columns: 30vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--on-bg);
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        &> :is(h2, h4) {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+
+        &>span {
+            position: absolute;
+            font-size: 12rem;
+            left: -6rem;
+            top: 0;
+            line-height: 5rem;
+            padding: 0;
+            margin: 0;
+            text-shadow: -5px -5px 0 #fff6, -10px -10px 0 #fff3;
+        }
+    }
+
+    &>span {
+        position: absolute;
+        bottom: 2ch;
+        left: 35vw;
+        font-size: 1.5rem;
+        color: var(--neutral);
+    }
+}
+
+
 
 /* TEXT ELEMENTS */
-:is(h1, h2) {
+:is(h1, h2, a) {
     font-family: "Rajdhani", sans-serif;
     font-weight: bold;
     font-style: normal;
-    color: var(--main);
-    text-shadow: 0 0 0.1em var(--main);
+    color: var(--main-li);
+    text-shadow: 0 0 0.1em var(--main-li);
 }
 
 h2 {
     font-size: 2.5rem;
-    width: 100%;
     text-align: center;
     margin: 1em;
 }
 
-:is(h3, h4, h5, h6, label, a) {
+:is(h3, h4, h5, h6, label) {
+    margin: 1ch 0;
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: var(--main);
+    color: var(--main-li);
 }
 
 .handwriting {
@@ -155,7 +286,7 @@ h2 {
     font-style: normal;
     font-weight: 400;
     font-style: normal;
-    background-color: var(--bg-dark);
+    color: var(--on-bg);
 }
 
 /* INPUTS */

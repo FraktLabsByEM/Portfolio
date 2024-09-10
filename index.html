@@ -7,9 +7,10 @@
   <title>FraktLabs || Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Eric Movilla">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="libs/AdvancedMaths.js" crossorigin>
   <!-- googlefonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -20,196 +21,129 @@
 </head>
 
 <body>
-  <section id="header" scroll-background scroll-depth="70">
-    <header>
+  <header>
+    <nav>
+      <ul material-navigation navigation-color="#126180aa" navigation-vertical>
+        <li>
+          <a content="Inicio" class="material-symbols-outlined" href="#home">home</a>
+        </li>
+        <li>
+          <a content="Proyectos" class="material-symbols-outlined" href="#projects">work</a>
+        </li>
+        <li>
+          <a content="Chatbot" class="material-symbols-outlined" href="?chatbot">smart_toy</a>
+        </li>
+        <li>
+          <a content="GitHub" class="material-symbols-outlined" href="https://github.com/FraktLabsByEM"
+            target="_blank">terminal</a>
+        </li>
+        <li>
+          <a content="Applicaciones" class="material-symbols-outlined" href="?findust">desktop_windows</a>
+        </li>
+        <li>
+          <a content="Contacto" class="material-symbols-outlined" href="#contact">alternate_email</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="header" scroll-background scroll-depth="100" scroll-inverted>
+
+    </section>
+    <section id="home">
+      <h2>¿Qué es Fraktal Labs?</h2>
       <div>
-        <img src="/assets/image-logo.png" class="header-logo" />
-        <h1>Frakt<strong>Labs</strong></h1>
+        <div>
+          <h3>Filosofía</h3>
+          <p>Fraktal Labs es una empresa dedicada al desarrollo de soluciones de software. Nuestra filosofía se inspira
+            en los fractales, de ahí surge nuestro nombre. Los fractales son figuras complejas formadas por patrones
+            intricados que, al observarse en detalle, revelan ser figuras primitivas. De este principio derivamos
+            nuestra filosofía: elaborar productos sofisticados a partir de elementos sencillos que, en combinaciones
+            variadas, generan patrones únicos y efectivos.</p>
+        </div>
+        <img width="600"
+          src="https://sebastianalegre.com/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-27-12.15.08-An-abstract-representation-of-the-universe-showing-fractal-patterns-with-galaxies-nebulae-and-cosmic-structures-intertwined-in-a-repeating-self-si.webp"
+          alt="Patron de fractales">
       </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="?chatbot">Chatbot</a></li>
-          <li><a href="#projects">Librerías</a></li>
-          <li><a href="?findust">Fraktal Industries</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-  </section>
-  <section id="home">
-    <h2>¿Que es Frakt Labs?</h2>
-    <p>What is Lorem Ipsum?
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard
-      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-      specimen
-      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-      essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more
-      recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-      Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-      its
-      layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-      using
-      'Content here, content here', making it look like readable English. Many desktop publishing packages and web page
-      editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-      sites
-      still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-      (injected humour and the like).
-
-
-      Where does it come from?
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-      literature
-      from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-      Virginia,
-      looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
-      cites of
-      the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-      1.10.33
-      of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
-      treatise
-      on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
-      sit
-      amet..", comes from a line in section 1.10.32.
-
-      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32
-      and
-      1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
-      accompanied by
-      English versions from the 1914 translation by H. Rackham.
-
-      Where can I get some?
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
-      form,
-      by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-      passage of
-      Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
-      Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on
-      the
-      Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
-      generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-      injected humour, or non-characteristic words etc.</p>
-  </section>
-  <div
-    style="height: 20dvh; width: 100%; background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7d97b4b8-dd3f-44bf-afc8-33025e350228/dflx2wy-df5009b0-0605-45f7-b9fb-ece9b68f9dfe.png/v1/fill/w_1280,h_854,q_80,strp/carbon_fiber_background_by_silentragex_dflx2wy-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvN2Q5N2I0YjgtZGQzZi00NGJmLWFmYzgtMzMwMjVlMzUwMjI4XC9kZmx4Mnd5LWRmNTAwOWIwLTA2MDUtNDVmNy1iOWZiLWVjZTliNjhmOWRmZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.EzgR_qzd4OQ0XLByVxibK6_aUzZ1gHSa-cAYhF1NEM4);"
-    scroll-background scroll-depth="50"></div>
-  <section id="home">
-    <h2>¿Que es Frakt Labs?</h2>
-    <p>What is Lorem Ipsum?
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard
-      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-      specimen
-      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-      essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more
-      recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-      Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-      its
-      layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-      to
-      using
-      'Content here, content here', making it look like readable English. Many desktop publishing packages and web
-      page
-      editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-      sites
-      still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-      purpose
-      (injected humour and the like).
-
-
-      Where does it come from?
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-      literature
-      from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-      Virginia,
-      looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
-      cites of
-      the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-      1.10.33
-      of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
-      treatise
-      on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
-      sit
-      amet..", comes from a line in section 1.10.32.
-      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
-      1.10.32
-      and
-      1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
-      accompanied by
-      English versions from the 1914 translation by H. Rackham.
-
-      Where can I get some?
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-      some
-      form,
-      by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-      passage of
-      Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
-      Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
-      on
-      the
-      Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
-      generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-      injected humour, or non-characteristic words etc.The standard chunk of Lorem Ipsum used since the 1500s is
-      reproduced below for those interested. Sections
-      1.10.32
-      and
-      1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
-      accompanied by
-      English versions from the 1914 translation by H. Rackham.
-
-      Where can I get some?
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-      some
-      form,
-      by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-      passage of
-      Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
-      Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
-      on
-      the
-      Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
-      generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-      injected humour, or non-characteristic words etc.The standard chunk of Lorem Ipsum used since the 1500s is
-      reproduced below for those interested. Sections
-      1.10.32
-      and
-      1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
-      accompanied by
-      English versions from the 1914 translation by H. Rackham.
-
-      Where can I get some?
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-      some
-      form,
-      by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-      passage of
-      Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
-      Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
-      on
-      the
-      Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
-      generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-      injected humour, or non-characteristic words etc.</p>
-  </section>
-  <footer>
-    <h4>Contáctanos</h4>
-  </footer>
-  <script src="./libs/ScrollBackground.js" type="module"></script>
+      <div>
+        <img width="600"
+          src="https://www.grapheverywhere.com/wp-content/uploads/2021/11/businesswoman-networking-using-digital-devices-1.jpg"
+          alt="Realidad aumentada">
+        <div>
+          <h3>Escalabilidad</h3>
+          <p>Para garantizar el mejor servicio y la más alta calidad en nuestros productos, siempre consideramos la
+            escalabilidad. Sabemos que cualquier negocio tiene como objetivo crecer, por lo que nosotros crecemos junto
+            a usted. Nuestros productos son altamente versátiles y se adaptan a industrias de cualquier tamaño.
+            Desde el inicio, diseñamos nuestros productos apuntando a los más grandes, asegurando que puedan
+            evolucionar y expandirse con su negocio.</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3>Seguridad</h3>
+          <p>En Fraktal Labs, la seguridad es nuestra máxima prioridad. Implementamos avanzadas medidas de protección,
+            como encriptación de extremo a extremo y rigurosas pruebas de ingreso, asegurando que cada solución
+            cumpla con los más estrictos estándares de la industria. Nuestro equipo de expertos trabaja continuamente
+            para identificar y mitigar amenazas, manteniendo sus datos a salvo. Además, adoptamos una política de
+            transparencia y comunicación abierta, informando de inmediato sobre cualquier riesgo. Su confianza es
+            nuestra mayor recompensa y nos comprometemos a protegerla con dedicación y profesionalismo.</p>
+        </div>
+        <img width="600"
+          src="https://www.grapheverywhere.com/wp-content/uploads/2021/11/digital-crime-by-an-anonymous-hacker.jpg"
+          alt="Realidad aumentada">
+      </div>
+      <div>
+        <img width="600" src="https://d1qqtien6gys07.cloudfront.net/wp-content/uploads/2024/06/DATAIA-1-1024x682.jpg"
+          alt="Realidad aumentada">
+        <div>
+          <h3>Al alcance de todos</h3>
+          <p>Nuestros productos son modulares, garantizando que cualquier empresario, desde un emprendedor hasta una
+            vasta plataforma intercompany, pueda acceder a ellos a diferencia de muchas otras soluciones de software
+            que carecen de esta flexibilidad. Nuestros productos son accesibles y asequibles, esto permite a los
+            pequeños empresarios no tener que pagar una fortuna por soluciones que no pueden aprovechar completamente.
+            En Fraktal Labs, creemos en proporcionar herramientas poderosas y adaptables para todos.</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <div class="grid">
+        <div id="shake-js" shake shake-angle="30" shake-glow shake-floating shake-shadow
+          style="--bgi: url(https://solutekla.com/photo/1/mac/computadores/imac_pro_2732_8cvg5632gb1tbspamq2y2ea27inch_imac_pro_with_retina_5k_display_32ghz_8core_intel_xeon_w/imac_pro_2732_8cvg5632gb1tbspamq2y2ea27inch_imac_pro_with_retina_5k_display_32ghz_8core_intel_xeon_w_0001)">
+          <div shake-depth="2">
+            <h4 shake-depth="4">Shake JS</h4>
+            <p shake-depth="3">Un complemento para agregar efecto hover 3d en elementos HTML.</p>
+          </div>
+        </div>
+        <div id="scrollbg-js" scroll-background scroll-depth="100"
+          style="--bgi: url(https://solutekla.com/photo/1/mac/computadores/imac_pro_2732_8cvg5632gb1tbspamq2y2ea27inch_imac_pro_with_retina_5k_display_32ghz_8core_intel_xeon_w/imac_pro_2732_8cvg5632gb1tbspamq2y2ea27inch_imac_pro_with_retina_5k_display_32ghz_8core_intel_xeon_w_0001)">
+          <div>
+            <h4>ScrollBackground JS</h4>
+            <p>Un complemento para agregar efecto scroll en fondos.</p>
+          </div>
+        </div>
+        <div id="navbar-js" style="--bgi: url(/assets/nav-bar.gif)">
+          <div>
+            <h4>Material Nav Bar JS</h4>
+            <p>Un complemento para agregar un efecto Material Desgin a la barra de navegación.</p>
+          </div>
+        </div>
+        <div id="autozoom-js"
+          style="--bgi: url(https://solutekla.com/photo/1/mac/computadores/imac_pro_2732_8cvg5632gb1tbspamq2y2ea27inch_imac_pro_with_retina_5k_display_32ghz_8core_intel_xeon_w/imac_pro_2732_8cvg5632gb1tbspamq2y2ea27inch_imac_pro_with_retina_5k_display_32ghz_8core_intel_xeon_w_0001)">
+          <div>
+            <h4>Autozoom JS</h4>
+            <p>Un complemento para agregar efecto zoom sobre imagenes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+    </section>
+  </main>
+  <script src="styles/styles.js"></script>
+  <script src="libs/MaterialNavBar.js"></script>
+  <script src="libs/ScrollBackground.js"></script>
+  <script src="libs/Shake.js"></script>
 </body>
 
 </html>
